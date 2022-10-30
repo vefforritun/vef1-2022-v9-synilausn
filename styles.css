@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-base-body-px: 16px;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  --spacing: 1rem;
+  --max-width: 1200px;
+
+  --color-link: #007bff;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: var(--font-base-body-px);
+  font-family: var(--font-family);
+  overflow-y: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: var(--color-link);
+}
+
+/* Layout */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+
+  margin: 0 auto;
+  padding: var(--spacing);
+  width: 100%;
+
+  max-width: var(--max-width);
+  min-height: 100vh;
+}
+
+.layout__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.layout__main {
+  flex: 1;
+}
+
+.layout__footer {
+  border-top: 1px solid #333;
+  padding: var(--spacing) 0;
+}
+
+/* Leitarniðurstöður */
+
+.results__container {
+  list-style: none;
+}
+
+.results__title {
+  margin-bottom: var(--spacing);
+}
+
+.results__result {
+  margin-bottom: var(--spacing);
+}
+
+/* Bók */
+
+.book__title {
+  margin-bottom: var(--spacing);
+}
+
+.book__details {
+  margin-bottom: var(--spacing);
+}
